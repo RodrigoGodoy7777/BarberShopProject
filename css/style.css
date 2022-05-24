@@ -230,15 +230,16 @@ body {
     padding: 100px 0;
 }
 
-.service .container {
-    text-align: center;
-}
-
 .service .container h2 {
     color: var(--color-secondary);
     font-weight: 400;
     font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
 
+.service .container .icone {
+    text-align: center;
 }
 
 .service .container .div-service {
@@ -270,5 +271,26 @@ body {
 
 .scheduling {
     background-color: var(--color-primary);
-    
+    padding: 100px 0;
+    height: 100vh;
+    background-image: url(../img/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+}
+
+.scheduling .container {
+    text-align: center;
+}
+
+.scheduling .container h2 {
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.scheduling .container .data {
+    display: flex;
+    justify-content: space-between;
 }

@@ -127,25 +127,35 @@
         </div>
     </section>
     <section class="scheduling">
-        <img src="img/chair-ic.png" alt="cadeira de barbear">
         <div class="container">
-            <h2>Faça um agendamento</h2>
+            <h2>Faça um Agendamento</h2>
             <img src="img/heading-ic-white.png" alt="icone" class="icone">
+
             <form action="">
-                <label for="name">Nome</label>
-                <input type="text" value="Nome" placeholder="Digite o seu nome:" id="name">
-                <label for="email">E-mail</label>
-                <input type="email" value="Email" placeholder="Digite o seu email:" id="email">
-                <label for="telefone">Telefone</label>
-                <input type="tel" value="Telefone" placeholder="Digite o seu telefone:" id="telefone">
-                <label for="opcoes">Tipo de serviço</label>
-                <select name="opcoes" id="menu">
-                    <option value="Corte de Cabelo">Corte de Cabelo</option>
-                    <option value="Corte de Barba">Corte de Barba</option>
-                </select>
-                <label for="texto">Mensagem:</label>
+                <div class="data">
+                    <div class="input">
+                        <label for="name">Nome</label>        
+                        <input type="text" value="Nome" placeholder="Digite o seu nome:" id="name">
+                    </div>
+                    <div class="input">
+                        <label for="email">E-mail</label>
+                        <input type="email" value="Email" placeholder="Digite o seu email:" id="email">
+                    </div>    
+                    <div class="input">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" value="Telefone" placeholder="Digite o seu telefone:" id="telefone">
+                    </div>
+                    <div class="input">
+                        <label for="opcoes">Tipo de serviço</label>
+                        <select name="opcoes" id="menu">
+                            <option value="Corte de Cabelo">Corte de Cabelo</option>
+                            <option value="Corte de Barba">Corte de Barba</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <label for="texto">Mensagem</label>
                 <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
-                <input type="submit">
             </form>
         </div>
     </section>
