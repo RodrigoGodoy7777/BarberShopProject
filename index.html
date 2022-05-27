@@ -9,33 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>BarberShop</title>
+    <link rel="icon" type="image/x-icon" href="img/clipper-cut.png">
 </head>
 <body>
-    
-    <section class="home">
+    <section class="home" id="home">
         <header class="header">
             <nav class="menu">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#">Quem Somos</a>
+                        <a href="#about">Quem Somos</a>
                     </li>
                     <li>
-                        <a href="#">Serviços</a>
+                        <a href="#service">Serviços</a>
                     </li>
                     <li>
                         <img src="img/logo.png" alt="logo" class="logo">
                     </li>
                     <li>
-                        <a href="#">Galeria</a>
+                        <a href="#galery">Galeria</a>
                     </li>
                     <li>
-                        <a href="#">Agendamento</a>
+                        <a href="#schediling">Agendamento</a>
                     </li>
                     <li>
-                        <a href="#">Localização</a>
+                        <a href="#location">Localização</a>
                     </li>
                 </ul>
             </nav>
@@ -47,7 +47,7 @@
             <img src="img/much-img.png" alt="bigode" class="bigode">
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="horarios">
                 <ul class="div-horarios">
@@ -90,7 +90,7 @@
             </article> 
         </div>
     </section>
-    <section class="service">
+    <section class="service" id="service">
         <div class="container">
             <h2>Nossos Serviços</h2>
             <img src="img/heading-ic.png" alt="bigode" class="icon-mustash">
@@ -126,7 +126,7 @@
             </div>
         </div>
     </section>
-    <section class="scheduling">
+    <section class="scheduling" id="schediling">
         <div class="container">
             <h2>Faça um Agendamento</h2>
             <img src="img/heading-ic-white.png" alt="icone" class="icone">
@@ -135,15 +135,15 @@
                 <div class="data">
                     <div class="input">
                         <label for="name">Nome</label>        
-                        <input type="text" value="Nome" placeholder="Digite o seu nome:" id="name">
+                        <input type="text" placeholder="Digite o seu nome:" id="name">
                     </div>
                     <div class="input">
                         <label for="email">E-mail</label>
-                        <input type="email" value="Email" placeholder="Digite o seu email:" id="email">
+                        <input type="email" placeholder="Digite o seu email:" id="email">
                     </div>    
                     <div class="input">
                         <label for="telefone">Telefone</label>
-                        <input type="tel" value="Telefone" placeholder="Digite o seu telefone:" id="telefone">
+                        <input type="tel" placeholder="Digite o seu telefone:" id="telefone">
                     </div>
                     <div class="input">
                         <label for="opcoes">Tipo de serviço</label>
@@ -153,11 +153,91 @@
                         </select>
                     </div>
                 </div>
-                
-                <label for="texto">Mensagem</label>
-                <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+                <div class="input">
+                    <label for="texto">Mensagem:</label>
+                    <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+                </div>
+
+                <button>Enviar</button>
             </form>
         </div>
     </section>
+    <section class="galery" id="galery">
+        <div class="container">
+            <h2>Galeria de fotos</h2>
+            <img src="img/heading-ic.png" alt="icone" class="icone">
+            <div class="div-wrapper">
+                <div class="div-image">
+                    <img src="img/gallery-img1.png" alt="imagem">
+                </div>
+                <div class="div-image">
+                    <img src="img/gallery-img2.png" alt="imagem">
+                </div>
+                <div class="div-image">
+                    <img src="img/gallery-img3.png" alt="imagem">
+                </div>
+                <div class="div-image">
+                    <img src="img/gallery-img4.png" alt="imagem">
+                </div>
+                <div class="div-image">
+                    <img src="img/gallery-img5.png" alt="imagem">
+                </div>
+                <div class="div-image">
+                    <img src="img/gallery-img6.png" alt="imagem">
+                </div>
+                <div class="div-image">
+                    <img src="img/gallery-img7.png" alt="imagem">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="location" id="location">
+        <div class="container">           
+            <div class="head-location">
+                <div class="info">
+                    <div class="icone">
+                        <img src="img/map-img1.png" alt="Localização">
+                    </div>
+                    <div class="text">
+                        <span>Localização</span>
+                        <span>Rua da Matrix, 33</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="icone">
+                        <img src="img/map-img2.png" alt="Telefone">
+                    </div>
+                    <div class="text">
+                        <span>Telefone</span>
+                        <span>(11)9999-9999</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="icone">
+                        <img src="img/map-img3.png" alt="Email">
+                    </div>
+                    <div class="text">
+                        <span>E-mail</span>
+                        <span>contato@barbershop.com</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="icone">
+                        <img src="img/map-img4.png" alt="Horário">
+                    </div>
+                    <div class="text">
+                        <span>Horário</span>
+                        <span>Seg à Sex: 9AM às 17PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.393775431397!2d-34.88850038567052!3d-8.061255382777512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18c0cb37173d%3A0x7bdc0f3a514601c8!2sR.%20da%20Concei%C3%A7%C3%A3o%20-%20Boa%20Vista%2C%20Recife%20-%20PE%2C%2050060-130!5e0!3m2!1spt-BR!2sbr!4v1653489823972!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        2021 Barber Shop - Todos os direitos reservados
+    </footer>
 </body>
 </html>

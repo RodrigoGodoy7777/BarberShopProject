@@ -11,11 +11,6 @@
     
 }
 
-html, body {
- 
-}
-
-
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -40,6 +35,7 @@ body {
     height: 100vh;
     background-image: url(../img/bg-home.jpg);
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -230,6 +226,10 @@ body {
     padding: 100px 0;
 }
 
+.service .container {
+    text-align: center;
+}
+
 .service .container h2 {
     color: var(--color-secondary);
     font-weight: 400;
@@ -279,8 +279,9 @@ body {
     background-size: 300px;
 }
 
-.scheduling .container {
-    text-align: center;
+.scheduling .icone {
+    display: block;
+    margin: 0 auto;
 }
 
 .scheduling .container h2 {
@@ -288,9 +289,168 @@ body {
     font-size: 50px;
     color: white;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.scheduling form {
+    margin-top: 80px;
 }
 
 .scheduling .container .data {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.scheduling .container label {
+    display: block;
+    color: var(--color-light);
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.scheduling .container .data .input {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.scheduling .container .data .input:last-of-type {
+    margin-right: 0;
+}
+
+.scheduling .container input, 
+.scheduling .container .data select,
+.scheduling .container textarea {
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.scheduling textarea {
+    height: 100px;
+}
+
+.scheduling button {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* --- */
+
+/* GALERIA DE FOTOS */
+
+.galery {
+    padding: 100px 0;
+    background-color: var(--color-light);
+}
+
+.galery .container h2 {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+}
+
+.galery .container .icone {
+    display: block;
+    margin: 0 auto;
+}
+
+.galery .div-wrapper {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 100vh;
+}
+
+.galery .div-wrapper .div-image {
+    border: 10px solid var(--color-primary);
+    margin: 6px;
+    width: 33%;
+}
+
+.galery .div-wrapper .div-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* --- */
+
+/* LOCALIZAÇÃO */
+
+.location {
+    padding: 100px 0;
+    background-image: url(../img/bg-location.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.location .container .head-location {
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location .head-location .info {
+    display: flex;
+    align-items: center;
+}
+
+.location .head-location .info .icone {
+    border: 1px solid var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.location .head-location .text span {
+    display: block;
+    font-size: 13px;
+}
+
+.location .head-location .text span:first-child {
+    color: silver;
+}
+
+.location .head-location .text span:last-child {
+    color: white;
+}
+
+.location .map {
+    width: 100%;
+}
+
+.location .map iframe {
+    width: 100%;
+}
+
+/* --- */
+
+/* FOOTER */
+
+footer {
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    padding: 40px;
+    font-size: 12px;
 }
